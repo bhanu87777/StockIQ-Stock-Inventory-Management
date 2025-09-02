@@ -1,129 +1,127 @@
-# POS SYSTEM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-## Modern Point of Sale System Built with MERN Stack
+<div class="logo-title" style="display: flex; align-items: center; gap: 10px;">
+  <img src="Images/Logo.png" alt="StockIQ Logo" style="height: 70px; width: auto;">
+  <h1 style="margin: 0; font-size: 28px;">StockIQ - Modern POS & Inventory Management System</h1>
+</div>
 
-A comprehensive Inventory Management System (IMS) and Point of Sale (POS) system built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This system provides a robust solution for managing sales, inventory, customers, and generating invoices.
+<p>A comprehensive Inventory Management System (IMS) and Point of Sale (POS) system built using the <strong>MERN (MongoDB, Express.js, React.js, Node.js)</strong> stack. This system provides a robust solution for managing sales, inventory, customers, and generating invoices.</p>
 
-## 🚀 Features
+<h2>🚀 Features</h2>
 
-### Product Management
+<h3>Product Management</h3>
+<ul>
+  <li>Add, edit, and delete products</li>
+  <li>Real-time product search functionality</li>
+  <li>Stock tracking with low stock alerts</li>
+  <li>Product categorization</li>
+  <li>Image support for products</li>
+</ul>
 
--   Add, edit, and delete products
--   Real-time product search functionality
--   Stock tracking with low stock alerts
--   Product categorization
--   Image support for products
+<h2>🛠 Technology Stack</h2>
+<ul>
+  <li><strong>Frontend:</strong> React.js, Ant Design, Redux</li>
+  <li><strong>Backend:</strong> Node.js, Express.js</li>
+  <li><strong>Database:</strong> MongoDB</li>
+</ul>
 
-### Cart & Sales
+<h2>🚀 Getting Started</h2>
 
--   Intuitive cart interface
--   Smart quantity management (auto-increment for duplicate items)
--   Real-time price calculation
--   Easy product addition and removal
--   Quick checkout process
+<h3>Prerequisites</h3>
+<ul>
+  <li>Node.js (v14 or higher)</li>
+  <li>MongoDB</li>
+  <li>npm or yarn</li>
+</ul>
 
-### Customer Management
-
--   Customer database with search functionality
--   Phone number formatting with "+880" prefix
--   Partial phone number search support
--   Customer history tracking
--   Address management
-
-### Invoice Generation
-
--   Professional invoice generation
--   Automatic invoice numbering
--   Customer details integration
--   Itemized bill generation
--   Print-ready format
-
-### User Interface
-
--   Modern, responsive design
--   Real-time search capabilities
--   Intuitive navigation
--   User-friendly forms
--   Clear feedback messages
-
-## 🛠 Technology Stack
-
--   **Frontend**: React.js, Ant Design, Redux
--   **Backend**: Node.js, Express.js
--   **Database**: MongoDB
--   **Authentication**: JWT
--   **API**: RESTful architecture
-
-## 🚀 Getting Started
-
-### Prerequisites
-
--   Node.js (v14 or higher)
--   MongoDB
--   npm or yarn
-
-### Installation Steps
-
-1. Clone the repository:
-
-```bash
-git clone <repository-url>
-```
-
-2. Install server dependencies:
-
-```bash
+<h3>Installation Steps</h3>
+<pre><code>git clone &lt;repository-url&gt;
 npm install
-```
-
-3. Install client dependencies:
-
-```bash
 cd client
 npm install
-```
+</code></pre>
 
-4. Create .env file in root directory with:
-
-```env
-MONGO_URI=your_mongodb_connection_string
+<h3>Configuration</h3>
+<p>Create a <code>.env</code> file in the root directory:</p>
+<pre><code>MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=8080
-```
+</code></pre>
 
-5. Start the development servers:
-
-For backend:
-
-```bash
+<h3>Running the Project</h3>
+<pre><code>// Backend
 npm run server
-```
 
-For frontend:
-
-```bash
+// Frontend
 cd client
 npm start
-```
+</code></pre>
 
-## 📝 Usage
+<h2>📝 Usage</h2>
+<ul>
+  <li>Register/Login to access the dashboard</li>
+  <li>Add products to your inventory</li>
+  <li>Manage customers</li>
+  <li>Create sales and generate invoices</li>
+  <li>Track your business performance</li>
+</ul>
 
-1. Register/Login to access the dashboard
-2. Add products to your inventory
-3. Manage customers
-4. Create sales and generate invoices
-5. Track your business performance
+<h2>📂 Suggested File Structure</h2>
+<pre>
+StockIQ/
+│
+├── backend/                 # Node.js + Express server
+│   ├── controllers/         # Business logic
+│   ├── models/              # Mongoose schemas
+│   ├── routes/              # API endpoints
+│   ├── middleware/          # Authentication & validation
+│   ├── utils/               # Helper functions
+│   ├── config/              # DB connection & env setup
+│   └── server.js            # Entry point
+│
+├── client/                  # React frontend
+│   ├── src/
+│   │   ├── components/      # Reusable UI elements
+│   │   ├── pages/           # Pages (Dashboard, POS, Inventory, Customers)
+│   │   ├── redux/           # State management
+│   │   ├── services/        # API calls (Axios)
+│   │   ├── assets/          # Images, icons
+│   │   └── App.js           # Root component
+│   └── package.json
+│
+├── Images/                  # Screenshots & logo
+│
+├── .env                     # Environment variables
+├── README.html              # Documentation
+└── package.json
+</pre>
 
-## 📄 License
+<h2>📸 Screenshots</h2>
+<div class="screenshots">
+  <img src="Images/1.png" alt="Screenshot 1">
+  <img src="Images/2.png" alt="Screenshot 2">
+  <img src="Images/3.png" alt="Screenshot 3">
+  <img src="Images/4.png" alt="Screenshot 4">
+  <img src="Images/5.png" alt="Screenshot 5">
+  <img src="Images/6.png" alt="Screenshot 6">
+  <img src="Images/7.png" alt="Screenshot 7">
+  <img src="Images/8.png" alt="Screenshot 8">
+</div>
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+<h2>✅ Conclusion</h2>
+<p>
+The <strong>StockIQ</strong> system delivers a complete solution for managing inventory and sales with ease. 
+By combining the power of the <strong>MERN stack</strong>, it ensures a fast, reliable, and scalable platform for businesses of any size. 
+With features like real-time stock tracking, smart cart management, customer handling, and professional invoice generation, 
+StockIQ simplifies day-to-day operations and improves business efficiency. 
+Future enhancements could include advanced analytics and integration with external systems for even greater business insights.
+</p>
 
-## 🙏 Acknowledgments
-
--   Ant Design for the UI components
--   MongoDB Atlas for database hosting
--   The MERN stack community
-
-## 📞 Support
-
-For support, please open an issue in the repository or contact the maintainers.
+</body>
+</html>
